@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 class Meal {
   final String id;
   final String title;
-  final DateTime dateTime,
+  final DateTime dateTime;
   final String description;
   final double price;
   final String hostName;
