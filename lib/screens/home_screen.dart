@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 
+import '../screens/app_drawer.dart';
 import '../widgets/meal_card.dart';
 
 class HomeScreen extends StatelessWidget {
+  final GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _drawerKey,
       appBar: AppBar(
+        // Removes automatic drawer icon
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.black87,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -24,10 +30,14 @@ class HomeScreen extends StatelessWidget {
               Icons.menu,
               color: Colors.white,
             ),
-            onPressed: () => {},
+            onPressed: () => {
+              _drawerKey.currentState.openDrawer(),
+            },
           )
         ],
       ),
+      drawer: AppDrawer(),
+      drawerEnableOpenDragGesture: false,
       body: Container(
         child: Column(
           children: <Widget>[
