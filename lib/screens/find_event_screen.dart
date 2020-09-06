@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/meal_card.dart';
+import '../widgets/event_card.dart';
 
-class FindMealScreen extends StatelessWidget {
+class FindEventScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,7 +17,7 @@ class FindMealScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          MealCard()
+          EventCard()
         ],
       ),
     );

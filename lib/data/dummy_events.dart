@@ -1,7 +1,7 @@
-import '../models/meal.dart';
+import '../models/event.dart';
 
-final List<Meal> dummyMeals = [
-  Meal(
+final List<Event> dummyEvents = [
+  Event(
       id: 'm1',
       title: 'Bobotie Fun!',
       description:

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MealCardHeader extends StatelessWidget {
+class EventCardHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DecoratedBox(

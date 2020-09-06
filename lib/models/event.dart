@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 
-class Meal {
+class Event {
   final String id;
   final String title;
   final DateTime dateTime;
@@ -9,7 +9,7 @@ class Meal {
   final String hostName;
   final String hostLocation;
 
-  Meal(
+  Event(
       {@required this.id,
       @required this.title,
       @required this.description,

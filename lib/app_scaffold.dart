@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'widgets/app_drawer.dart';
 
-import 'screens/find_meal_screen.dart';
-import 'screens/host_meal_screen.dart';
+import 'screens/find_event_screen.dart';
+import 'screens/host_event_screen.dart';
 import 'screens/profile_screen.dart';
 
 class AppScaffold extends StatefulWidget {
@@ -27,10 +27,10 @@ class _AppScaffoldState extends State<AppScaffold> {
   void initState() {
     _pages = [
       {
-        'page': FindMealScreen(),
+        'page': FindEventScreen(),
       },
       {
-        'page': HostMealScreen(),
+        'page': HostEventScreen(),
       },
       {
         'page': ProfileScreen(),
@@ -82,12 +82,12 @@ class _AppScaffoldState extends State<AppScaffold> {
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
             icon: Icon(Icons.search),
-            title: Text('Find a meal'),
+            title: Text('Find an Event'),
           ),
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
             icon: Icon(Icons.room_service),
-            title: Text('Host a meal'),
+            title: Text('Host an Event'),
           ),
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,

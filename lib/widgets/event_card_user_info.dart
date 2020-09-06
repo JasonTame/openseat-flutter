@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MealCardUserInfo extends StatelessWidget {
+class EventCardUserInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(

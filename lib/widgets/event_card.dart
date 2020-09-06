@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/meal_card_header.dart';
-import '../widgets/meal_card_user_info.dart';
-import '../widgets/meal_card_description.dart';
+import 'event_card_header.dart';
+import 'event_card_user_info.dart';
+import 'event_card_description.dart';
 
-class MealCard extends StatelessWidget {
+class EventCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -13,14 +13,14 @@ class MealCard extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: <Widget>[
-            MealCardHeader(),
+            EventCardHeader(),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10.0),
-              child: MealCardUserInfo(),
+              child: EventCardUserInfo(),
             ),
             Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
-                child: MealCardDescription()),
+                child: EventCardDescription()),
           ],
         ),
       ),
