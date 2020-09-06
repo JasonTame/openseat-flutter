@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/event_card.dart';
+import '../widgets/event_carousel.dart';
 
 class FindEventScreen extends StatelessWidget {
   @override
@@ -17,10 +18,13 @@ class FindEventScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          EventCard()
+          Expanded(
+            child: Container(
+              child: EventCarousel(),
+            ),
+          )
         ],
       ),
     );
-    ;
   }
 }
