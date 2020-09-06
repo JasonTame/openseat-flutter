@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/event_card.dart';
 import '../widgets/event_carousel.dart';
 
 class FindEventScreen extends StatelessWidget {
