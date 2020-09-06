@@ -9,6 +9,10 @@ class Events with ChangeNotifier {
     return [..._events];
   }
 
+  Event findById(String id) {
+    return _events.firstWhere((event) => event.id == id);
+  }
+
   void addEvent() {
     //TODO: Add method for adding new events
     notifyListeners();
